@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-9">
+    <title>Links</title>
+</head>
+
+<body>
+<p>Para criar um formulário é necessário declará-lo coom a tag FORM</p>    
+<p>Na declaração, vamos usar o ACTION que é para onde os dados serão enviados</p>
+<p>E também o Método: GET para enviar pelo próprio navegador ou POST para ser encriptado e enviado</p>
+
+<form action="processa.php" method="post">
+    <label>Text</label>
+    <input type="text" name="texto1" placeholder="Eu sou um input tipo TEXT">
+    <br>
+    <label>Password</label>
+    <input type="password" name="senha" placeholder="Insira sua Senha">
+    <br>
+    <label>Oculto</label>
+    <input type="hidden" name="informacao_oculta" value="Mensagem Oculta">
+    <br>
+    <label>Select</label>
+    <select name="selecao">
+        <option value="1">Opção 1</option>
+        <option value="2">Opção 2</option>
+    </select>
+    <br>
+    <label>Radio</label>
+    <input type="radio" name="radio1" value="1">Valor 1
+    <input type="radio" name="radio1" value="2">Valor 2
+    <br>
+    <label>Checkbox</label><br>
+    <input type="checkbox" name="ck1" value="1" checked>Valor 1<br>
+    <input type="checkbox" name="ck1" value="2">Valor 2<br>
+    <input type="checkbox" name="ck1" value="3">Valor 3<br>
+    <br>
+    <input type="submit" value="Enviar" name="submit">
+    
+    
+</form>
+</body>
+</html>
